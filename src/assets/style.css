@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
+.header--container {
+  z-index: 10;
+  background-color: white;
+  width: 100%;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 100px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+h1 > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2 {
+  font-size: 0.8rem;
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+.about-btn {
+  margin-top: 10px;
+  background-color: blue;
+}
+
+.about {
+  width: 360px;
+  position: fixed;
+  background-color: white;
+  right: 0;
+  z-index: 11;
+  top: 50px;
+  padding: 0 10px 0 10px;
+  border: 1px solid lightgray;
+  box-shadow: 5px 5px 5px lightgrey;
+}
+
+.about-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 12;
+}
+
+.gcse--container {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.search {
+  background-color: white;
+  border-bottom: 1px solid #DFE1E5;
+  padding: 0 100px 0 100px;
+  z-index: 10;
+}
+
+.gcse--wrapper {
+  position: fixed;
+  overflow: scroll;
+  height: 80%;
+  width: 100%;
+}
+.results {
+  padding: 0 100px 0 100px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 800px) {
+  .results, .search {
+    padding: 0;
+  }
+  
+}
